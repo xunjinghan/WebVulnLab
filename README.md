@@ -1,4 +1,4 @@
-# WebVulnLab — 自研 Web 漏洞靶场
+# onefile-vuln-lab — 自研 Web 漏洞靶场
 
 **EN** — A zero-dependency, single-file vulnerable web lab with 15+ real exploitable bugs. Runs with `python app.py`, binds 127.0.0.1 only, resets in one command. Built for practising and for testing scanners.
 
@@ -9,14 +9,14 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![漏洞类型](https://img.shields.io/badge/漏洞类型-15+-orange)
 ![零依赖](https://img.shields.io/badge/零依赖-标准库only-orange)
-![CI](https://github.com/xunwmw/WebVulnLab/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/xunwmw/onefile-vuln-lab/actions/workflows/ci.yml/badge.svg)
 
 ---
 
 ## 为什么需要这个靶场？
 
 市面上的靶场（DVWA、bWAPP、Vulhub）要么需要 LAMP 环境，要么需要 Docker，要么漏洞太旧。
-WebVulnLab 的设计目标是：
+onefile-vuln-lab 的设计目标是：
 
 - **零依赖**：只用 Python 标准库，`python app.py` 直接跑
 - **单文件**：所有漏洞在一个 `app.py` 里，方便读源码学原理
@@ -135,9 +135,9 @@ MIT — 见 [LICENSE](LICENSE)。
 
 | 你想做的事 | 点哪里 |
 | --- | --- |
-| 跑不起来 / 有报错 | [提 Bug 报告](https://github.com/xunwmw/WebVulnLab/issues/new?template=bug_report.md) |
-| 想要新漏洞场景 / 提意见 | [提功能建议](https://github.com/xunwmw/WebVulnLab/issues/new?template=feature_request.md) |
-| **想一起做这个项目（申请项目合作人）** | [提交合作者申请](https://github.com/xunwmw/WebVulnLab/issues/new?template=collaborator_request.md) |
+| 跑不起来 / 有报错 | [提 Bug 报告](https://github.com/xunwmw/onefile-vuln-lab/issues/new?template=bug_report.md) |
+| 想要新漏洞场景 / 提意见 | [提功能建议](https://github.com/xunwmw/onefile-vuln-lab/issues/new?template=feature_request.md) |
+| **想一起做这个项目（申请项目合作人）** | [提交合作者申请](https://github.com/xunwmw/onefile-vuln-lab/issues/new?template=collaborator_request.md) |
 | 已经改好了 | 直接发 Pull Request |
 
 「申请项目合作人」就是 GitHub 的仓库协作者（Collaborator）：你提申请，我会在 **Settings → Collaborators** 里把你加进来，
