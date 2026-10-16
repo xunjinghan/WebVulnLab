@@ -4,7 +4,7 @@
 ![Python](https://img.shields.io/badge/python-3.8+-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![婕忔礊绫诲瀷](https://img.shields.io/badge/婕忔礊绫诲瀷-15+-orange)
-![闆朵緷璧朷(https://img.shields.io/badge/闆朵緷璧?鏍囧噯搴?only)
+![零依赖](https://img.shields.io/badge/%E9%9B%B6%E4%BE%9D%E8%B5%96-Python%E6%A0%87%E5%87%86%E5%BA%93-orange)
 
 ---
 

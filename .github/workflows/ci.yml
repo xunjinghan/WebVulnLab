@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Syntax check
+        run: python -m py_compile app.py
+
+      - name: Smoke test (start -> index 200 -> reset 200)
+        run: |
+          set -e
+          python app.py 8095 > server.log 2>&1 &
+          PID=$!
+          for i in $(seq 1 20); do
+            if curl -fsS -o /dev/null http://127.0.0.1:8095/; then break; fi
+            sleep 0.5
+          done
+          echo "index: $(curl -fsS -o /dev/null -w '%{http_code}' http://127.0.0.1:8095/)"
+          echo "reset: $(curl -fsS -X POST 'http://127.0.0.1:8095/__reset?confirm=RESET' -o /dev/null -w '%{http_code}')"
+          kill $PID
+          tail -n 20 server.log
+
+  secret-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Block real credentials / personal paths
+        run: |
+          set -e
+          PATTERNS='github_pat_|ghp_[A-Za-z0-9]{30,}|sk-[A-Za-z0-9]{32,}|AIza[A-Za-z0-9_-]{30,}|-----BEGIN [A-Z ]*PRIVATE KEY-----'
+          if grep -rInE "$PATTERNS" --exclude-dir=.git . ; then
+            echo "::error::疑似真实凭据，请脱敏后再提交"
+            exit 1
+          fi
+          echo "OK"
