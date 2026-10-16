@@ -1,5 +1,7 @@
 # WebVulnLab — 自研 Web 漏洞靶场
 
+**EN** — A zero-dependency, single-file vulnerable web lab with 15+ real exploitable bugs. Runs with `python app.py`, binds 127.0.0.1 only, resets in one command. Built for practising and for testing scanners.
+
 > 一个用 Python 标准库写成的、**故意充满真实可利用漏洞**的 Web 靶场。
 > 零依赖、单文件、一键启动，专为安全学习者与自动化挖掘工具测试而设计。
 
@@ -7,7 +9,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![漏洞类型](https://img.shields.io/badge/漏洞类型-15+-orange)
 ![零依赖](https://img.shields.io/badge/零依赖-标准库only-orange)
-![CI](https://github.com/xunjinghan/WebVulnLab/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/xunwmw/WebVulnLab/actions/workflows/ci.yml/badge.svg)
 
 ---
 
@@ -72,7 +74,7 @@ Windows 用户可以直接双击 `run.cmd`（或 `run.cmd 9001` 指定端口）�
 
 ## 漏洞清单（15+ 类）
 
-完整清单和逐条验证思路见 **[LAB-MANIFEST.md](LAB-MANIFEST.md)**（练习时建议先别看，打完再对照）。
+完整清单与逐条验证思路见 **[docs/BASELINE.md](docs/BASELINE.md)（靶场基线记录）**（练习时建议先别看，打完再对照）。
 
 | 类别 | 漏洞 | 位置 |
 |---|---|---|
