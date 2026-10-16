@@ -1,23 +1,13 @@
-# 更新日志
+﻿# Changelog
 
-本项目所有重要变更都记录在此文件中。
+## v1.0.0 — 2026-10-16
 
-格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，
-版本号遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
+首个公开版本。
 
-## [Unreleased]
+- 零依赖单文件靶场：Python 标准库，15+ 真实可利用漏洞
+- 一键重置（进程内 --reset / HTTP /__reset）
+- 只监听 127.0.0.1，含原版与加固版对照
+- 新增：SECURITY.md、docs/PRACTICE.md（三条练习路径）、run.cmd（Windows 启动器）
+- 修复：README 徽章语法；LAB-MANIFEST 靶场口令脱敏；旧版快照移入 history/
+- 新增 CI：语法检查 + 启动冒烟（首页 200 / 重置 200）+ 凭据扫描
 
-### 新增
-### 修复
-### 变更
-### 废弃
-
----
-
-## [1.0.0] - 2026-10-13
-
-### 新增
-- 初始版本发布
-- 核心功能模块
-- 安全护栏与审计日志
-- 结构化证据存储
