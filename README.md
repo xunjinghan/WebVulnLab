@@ -125,3 +125,22 @@ curl -X POST "http://127.0.0.1:8095/__reset?confirm=RESET"
 ## 许可
 
 MIT — 见 [LICENSE](LICENSE)。
+
+---
+
+## 反馈 · 合作
+
+> 如果你在使用时发现了任何问题，可以给我发消息或者私信我。不过最好不要私信，本人社恐。欢迎大佬给我的项目提意见。
+> 如果你使用时发生了错误或者没法使用，也可以修改我的项目。申请项目合作人。
+
+| 你想做的事 | 点哪里 |
+| --- | --- |
+| 跑不起来 / 有报错 | [提 Bug 报告](https://github.com/xunwmw/WebVulnLab/issues/new?template=bug_report.md) |
+| 想要新漏洞场景 / 提意见 | [提功能建议](https://github.com/xunwmw/WebVulnLab/issues/new?template=feature_request.md) |
+| **想一起做这个项目（申请项目合作人）** | [提交合作者申请](https://github.com/xunwmw/WebVulnLab/issues/new?template=collaborator_request.md) |
+| 已经改好了 | 直接发 Pull Request |
+
+「申请项目合作人」就是 GitHub 的仓库协作者（Collaborator）：你提申请，我会在 **Settings → Collaborators** 里把你加进来，
+通过后你有这个仓库的写权限（能建分支、提 PR、管 Issue），比一直 fork 省事。
+
+**环境要求**（零依赖，Windows/Linux/macOS 都行）→ [docs/ENVIRONMENT.md](docs/ENVIRONMENT.md)
