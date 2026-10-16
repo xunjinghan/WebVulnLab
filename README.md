@@ -1,4 +1,4 @@
-# onefile-vuln-lab — 自研 Web 漏洞靶场
+# 🐛 异世界训练场 · 单文件靶场 — WebVulnLab：零依赖 Web 漏洞靶场（15+ 真实可利用漏洞 · 一键重置）
 
 **EN** — A zero-dependency, single-file vulnerable web lab with 15+ real exploitable bugs. Runs with `python app.py`, binds 127.0.0.1 only, resets in one command. Built for practising and for testing scanners.
 
