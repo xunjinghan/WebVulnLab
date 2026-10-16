@@ -137,3 +137,12 @@ WebVulnLab/
 ## 璁稿彲璇?
 [MIT License](LICENSE)
 
+
+---
+
+## 演示
+
+![首页](docs/screenshot.png)
+
+启动后首页就是全部入口；练习路径（手工挖 / 自动化 / 盲挖去提示化）见 [docs/PRACTICE.md](docs/PRACTICE.md)。
+
